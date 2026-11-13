@@ -8,12 +8,12 @@ document.querySelector('#app').innerHTML = `
 
     <nav class="nav">
       <a href="#inicio">INÍCIO</a>
-      <a href="#servicos">SERVIÇOS</a>
-      <a href="#antes-depois">RESULTADOS</a>
-      <a href="#sobre">CONTATO</a>
+      <a href="#sobre">SOBRE</a>
+      <a href="#trabalhos">TRABALHOS</a>
+      <a href="#contato">CONTATO</a>
     </nav>
 
-    <a href="#contato" class="header-button">AGENDAR <span></span></a>
+    <a href="#orcamento" class="header-button">SOLICITAR ORÇAMENTO</a>
   </header>
 
   <main>
@@ -26,115 +26,166 @@ document.querySelector('#app').innerHTML = `
 
       <div class="hero-content">
         <h1>
-          A PERFEIÇÃO<br>
-          ESTÁ NOS <span>DETALHES.</span>
+          CUIDADO QUE<br>
+          SE VÊ NOS <span>DETALHES.</span>
         </h1>
 
-        <a href="#servicos" class="hero-services-button">
-          VER NOSSOS SERVIÇOS
+        <p>
+          Estética automotiva com atenção em cada detalhe.
+          Seu veículo merece esse cuidado.
+        </p>
+
+        <a href="#trabalhos" class="hero-button">
+          CONHEÇA NOSSO TRABALHO
+        </a>
+      </div>
+
+      <div class="hero-bottom">
+        <span>QUALIDADE EM CADA DETALHE</span>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="about-title">
+        <span class="eyebrow"><i></i> NOSSA ESSÊNCIA</span>
+        <h2>CUIDADO EM<br>CADA <span>DETALHE.</span></h2>
+      </div>
+
+      <div class="about-text">
+        <p class="about-lead">
+          Mais do que cuidar de veículos, valorizamos cada detalhe
+          para entregar um resultado que faz a diferença.
+        </p>
+
+        <p>
+          Na MB Estética Automotiva, cada trabalho recebe atenção
+          e dedicação. Nosso objetivo é oferecer um serviço cuidadoso,
+          respeitando as características de cada veículo.
+        </p>
+
+        <a href="#contato" class="text-link">
+          ENTRE EM CONTATO
         </a>
       </div>
     </section>
 
-    <section class="services-section" id="servicos">
-      <div class="services-heading">
-        <h2>NOSSOS <span>SERVIÇOS.</span></h2>
+    <section class="works-section" id="trabalhos">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow"><i></i> NOSSO PORTFÓLIO</span>
+          <h2>TRABALHOS <span>REALIZADOS.</span></h2>
+        </div>
+
+        <p>
+          Cada imagem mostra um pouco do cuidado e da dedicação
+          presentes em nossos serviços.
+        </p>
       </div>
 
-      <div class="carousel-container">
-        <div class="carousel-stage">
+      <div class="works-grid">
+        <article class="work-card">
+          <div class="work-image">
+            <img src="/servicos/servicos-01.jpeg" alt="Trabalho realizado pela MB Estética Automotiva">
+          </div>
+          <div class="work-info">
+            <span>MB ESTÉTICA AUTOMOTIVA</span>
+            <h3>LIMPEZA DE CHASSI</h3>
+          </div>
+        </article>
 
-          <button class="service-card is-prev" data-index="4">
-            <div class="service-card-visual">
-              <img src="/servicos/servicos-05.jpeg" alt="Limpeza de chassi">
-            </div>
-            <div class="service-card-info">
-              <span class="service-label">MB ESTÉTICA AUTOMOTIVA</span>
-              <h3>LIMPEZA DE CHASSI</h3>
-            </div>
-          </button>
+        <article class="work-card">
+          <div class="work-image">
+            <img src="/servicos/servicos-02.jpeg" alt="Serviço automotivo realizado pela MB">
+          </div>
+          <div class="work-info">
+            <span>MB ESTÉTICA AUTOMOTIVA</span>
+            <h3>CUIDADO AUTOMOTIVO</h3>
+          </div>
+        </article>
 
-          <button class="service-card is-hidden" data-index="3">
-            <div class="service-card-visual">
-              <img src="/servicos/servicos-04.jpeg" alt="Limpeza de chassi">
-            </div>
-            <div class="service-card-info">
-              <span class="service-label">MB ESTÉTICA AUTOMOTIVA</span>
-              <h3>LIMPEZA DE CHASSI</h3>
-            </div>
-          </button>
+        <article class="work-card">
+          <div class="work-image">
+            <img src="/servicos/servicos-03.jpeg" alt="Resultado de serviço automotivo da MB">
+          </div>
+          <div class="work-info">
+            <span>MB ESTÉTICA AUTOMOTIVA</span>
+            <h3>DETALHAMENTO</h3>
+          </div>
+        </article>
 
-          <button class="service-card is-active" data-index="0">
-            <div class="service-card-visual">
-              <img src="/servicos/servicos-01.jpeg" alt="Limpeza de chassi">
-            </div>
-            <div class="service-card-info">
-              <span class="service-label">MB ESTÉTICA AUTOMOTIVA</span>
-              <h3>LIMPEZA DE CHASSI</h3>
-            </div>
-          </button>
+        <article class="work-card">
+          <div class="work-image">
+            <img src="/servicos/servicos-04.jpeg" alt="Trabalho de estética automotiva">
+          </div>
+          <div class="work-info">
+            <span>MB ESTÉTICA AUTOMOTIVA</span>
+            <h3>LIMPEZA DETALHADA</h3>
+          </div>
+        </article>
 
-          <button class="service-card is-next" data-index="1">
-            <div class="service-card-visual">
-              <img src="/servicos/servicos-02.jpeg" alt="Limpeza de chassi">
-            </div>
-            <div class="service-card-info">
-              <span class="service-label">MB ESTÉTICA AUTOMOTIVA</span>
-              <h3>LIMPEZA DE CHASSI</h3>
-            </div>
-          </button>
+        <article class="work-card">
+          <div class="work-image">
+            <img src="/servicos/servicos-05.jpeg" alt="Serviço realizado pela MB Estética Automotiva">
+          </div>
+          <div class="work-info">
+            <span>MB ESTÉTICA AUTOMOTIVA</span>
+            <h3>RESULTADO FINAL</h3>
+          </div>
+        </article>
 
-          <button class="service-card is-hidden" data-index="2">
-            <div class="service-card-visual">
-              <img src="/servicos/servicos-03.jpeg" alt="Limpeza de chassi">
-            </div>
-            <div class="service-card-info">
-              <span class="service-label">MB ESTÉTICA AUTOMOTIVA</span>
-              <h3>LIMPEZA DE CHASSI</h3>
-            </div>
-          </button>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="before-after-section" id="antes-depois">
-      <div class="before-after-heading">
-        <span class="eyebrow"><i></i> RESULTADOS REAIS</span>
-        <h2>ANTES E <span>DEPOIS.</span></h2>
-        <p>Veja a diferença em cada detalhe.</p>
-      </div>
-
-      <div class="before-after-item">
-        <div class="before-after-image">
-          <img src="/antes-depois.jpeg" alt="Antes e depois da limpeza de chassi">
-        </div>
-        <div class="before-after-caption">
-          <span>ANTES</span>
-          <span>DEPOIS</span>
-        </div>
-      </div>
-
-      <div class="before-after-item">
-        <div class="before-after-image">
-          <img src="/antes-depois-2.jpeg" alt="Antes e depois da limpeza do veículo">
-        </div>
-        <div class="before-after-caption">
-          <span>ANTES</span>
-          <span>DEPOIS</span>
-        </div>
+        <a href="#orcamento" class="work-cta">
+          <span class="cta-small">SEU VEÍCULO MERECE</span>
+          <h3>VAMOS CUIDAR<br>DO SEU CARRO?</h3>
+          <span class="cta-link">SOLICITE UM ORÇAMENTO</span>
+        </a>
       </div>
     </section>
 
-    <section class="budget-section" id="contato">
+    <section class="difference-section">
+      <div class="difference-intro">
+        <span class="eyebrow"><i></i> O PADRÃO MB</span>
+        <h2>ATENÇÃO AOS<br>DETALHES. <span>SEMPRE.</span></h2>
+        <p>
+          Um bom resultado começa no cuidado com cada etapa do serviço.
+          É assim que trabalhamos.
+        </p>
+      </div>
+
+      <div class="difference-grid">
+        <article class="difference-card">
+          <span>01 / CUIDADO</span>
+          <h3>ATENÇÃO EM CADA DETALHE</h3>
+          <p>Tratamos cada veículo com dedicação e atenção ao serviço realizado.</p>
+        </article>
+
+        <article class="difference-card">
+          <span>02 / QUALIDADE</span>
+          <h3>COMPROMISSO COM O RESULTADO</h3>
+          <p>Buscamos entregar um trabalho bem executado em cada atendimento.</p>
+        </article>
+
+        <article class="difference-card">
+          <span>03 / DEDICAÇÃO</span>
+          <h3>TRABALHO FEITO COM ZELO</h3>
+          <p>Cada etapa é realizada com cuidado e responsabilidade.</p>
+        </article>
+
+        <article class="difference-card">
+          <span>04 / CONFIANÇA</span>
+          <h3>ATENDIMENTO PRÓXIMO</h3>
+          <p>Um atendimento atencioso para entender o que seu veículo precisa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="budget-section" id="orcamento">
       <div class="budget-heading">
-        <span class="eyebrow"><i></i> ATENDIMENTO EXCLUSIVO MB</span>
-        <h2>AGENDE SEU<br><span>ATENDIMENTO.</span></h2>
-        <p>Escolha os serviços desejados e solicite seu atendimento.</p>
+        <span class="eyebrow"><i></i> FALE COM A MB</span>
+        <h2>PEÇA SEU <span>ORÇAMENTO.</span></h2>
+        <p>Preencha os dados e conte o que seu veículo precisa.</p>
       </div>
 
       <form class="budget-form" id="budget-form">
-
         <div class="form-topline">
           <span>01 / SEUS DADOS</span>
           <span>MB ESTÉTICA AUTOMOTIVA</span>
@@ -192,178 +243,41 @@ document.querySelector('#app').innerHTML = `
         </div>
 
         <button type="submit" class="budget-submit">
-          SOLICITAR ATENDIMENTO <span></span>
+          ENVIAR SOLICITAÇÃO
         </button>
 
         <p class="form-note">
-          Ao continuar, você será direcionado ao WhatsApp da MB.
+          Você será direcionado ao WhatsApp da MB para continuar o atendimento.
         </p>
       </form>
     </section>
-
-    <section class="contact-section" id="sobre">
-      <div class="contact-content">
-        <span class="eyebrow"><i></i> MB ESTÉTICA AUTOMOTIVA</span>
-        <h2>VAMOS CUIDAR<br>DO SEU <span>CARRO?</span></h2>
-        <p>Entre em contato e acompanhe nosso trabalho.</p>
-
-        <div class="contact-links">
-          <a
-            href="https://wa.me/5512981408825"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-link"
-          >
-            <span class="contact-link-label">FALE CONOSCO</span>
-            <strong>WHATSAPP</strong>
-            <span class="contact-arrow">↗</span>
-          </a>
-
-          <a
-            href="https://www.instagram.com/mbestetica.auto/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-link"
-          >
-            <span class="contact-link-label">ACOMPANHE NOSSO TRABALHO</span>
-            <strong>INSTAGRAM</strong>
-            <span class="contact-arrow">↗</span>
-          </a>
-        </div>
-
-        <span class="instagram-handle">@mbestetica.auto</span>
-      </div>
-
-      <div class="contact-footer">
-        <span>MB ESTÉTICA AUTOMOTIVA</span>
-        <span>QUALIDADE EM CADA DETALHE.</span>
-      </div>
-    </section>
   </main>
+
+  <footer class="footer" id="contato">
+    <div class="footer-main">
+      <a href="#inicio" class="footer-logo">
+        <img src="/logo-mb.png" alt="MB Estética Automotiva">
+      </a>
+
+      <div class="footer-message">
+        <span>MB ESTÉTICA AUTOMOTIVA</span>
+        <p>QUALIDADE EM CADA DETALHE.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://wa.me/5512981408825" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+        <a href="https://www.instagram.com/mbestetica.auto/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© MB ESTÉTICA AUTOMOTIVA</span>
+      <a href="#inicio">VOLTAR AO TOPO</a>
+    </div>
+  </footer>
 `
 
-// CARROSSEL 3D
-
-const cards = [...document.querySelectorAll('.service-card')]
-const stage = document.querySelector('.carousel-stage')
-
-let activeIndex = 0
-let pointerStartX = 0
-let pointerStartY = 0
-let pointerCurrentX = 0
-let isDragging = false
-let hasMoved = false
-let suppressClick = false
-
-function updateCarousel() {
-  const total = cards.length
-
-  cards.forEach((card) => {
-    const index = Number(card.dataset.index)
-    const difference = (index - activeIndex + total) % total
-
-    card.classList.remove(
-      'is-active',
-      'is-prev',
-      'is-next',
-      'is-hidden'
-    )
-
-    if (difference === 0) {
-      card.classList.add('is-active')
-    } else if (difference === 1) {
-      card.classList.add('is-next')
-    } else if (difference === total - 1) {
-      card.classList.add('is-prev')
-    } else {
-      card.classList.add('is-hidden')
-    }
-  })
-}
-
-function nextService() {
-  activeIndex = (activeIndex + 1) % cards.length
-  updateCarousel()
-}
-
-function previousService() {
-  activeIndex = (activeIndex - 1 + cards.length) % cards.length
-  updateCarousel()
-}
-
-stage.addEventListener('pointerdown', (event) => {
-  if (event.button !== 0) return
-
-  pointerStartX = event.clientX
-  pointerStartY = event.clientY
-  pointerCurrentX = event.clientX
-
-  isDragging = true
-  hasMoved = false
-
-  stage.classList.add('is-dragging')
-  stage.setPointerCapture(event.pointerId)
-})
-
-stage.addEventListener('pointermove', (event) => {
-  if (!isDragging) return
-
-  pointerCurrentX = event.clientX
-
-  const distanceX = Math.abs(pointerCurrentX - pointerStartX)
-  const distanceY = Math.abs(event.clientY - pointerStartY)
-
-  if (distanceX > 8 && distanceX > distanceY) {
-    hasMoved = true
-  }
-})
-
-function finishDragging() {
-  if (!isDragging) return
-
-  const distance = pointerCurrentX - pointerStartX
-
-  isDragging = false
-  stage.classList.remove('is-dragging')
-
-  if (hasMoved) {
-    suppressClick = true
-
-    if (distance < -45) {
-      nextService()
-    } else if (distance > 45) {
-      previousService()
-    }
-
-    setTimeout(() => {
-      suppressClick = false
-    }, 300)
-  }
-}
-
-stage.addEventListener('pointerup', finishDragging)
-stage.addEventListener('pointercancel', finishDragging)
-
-stage.addEventListener('click', (event) => {
-  if (suppressClick) {
-    event.preventDefault()
-    event.stopPropagation()
-    suppressClick = false
-  }
-}, true)
-
-cards.forEach((card) => {
-  card.addEventListener('click', () => {
-    if (hasMoved || suppressClick) return
-
-    activeIndex = Number(card.dataset.index)
-    updateCarousel()
-  })
-})
-
-updateCarousel()
-
-// ENVIO DO ORÇAMENTO PELO WHATSAPP
+// FORMULÁRIO DE ORÇAMENTO
 
 const budgetForm = document.querySelector('#budget-form')
 
@@ -383,7 +297,7 @@ budgetForm.addEventListener('submit', (event) => {
   }
 
   const message = `
-Olá! Gostaria de solicitar um atendimento na MB Estética Automotiva.
+Olá! Gostaria de solicitar um orçamento na MB Estética Automotiva.
 
 Nome: ${customerName}
 Veículo: ${vehicle}
